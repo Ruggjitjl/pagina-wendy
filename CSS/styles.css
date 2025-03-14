@@ -110,6 +110,26 @@ header .textos-header {
     margin-top: -50px; /* Ajusta la separación de la onda */
     z-index: 5;
 }
+.general-1 {
+    background-color: #2C5364;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: flex-start; /* Alinea el texto a la izquierda */
+    justify-content: center; /* Centra verticalmente el contenido */
+    padding: 50px;
+    gap: 20px; /* Espacio entre el h2 y el p */
+}
+
+.general-1 h2 {
+    margin: 0; /* Elimina márgenes predeterminados */
+    color: white; /* Asegura contraste con el fondo */
+}
+
+.general-1 p {
+    margin: 0; /* Elimina márgenes predeterminados */
+    color: white; /* Asegura contraste con el fondo */
+}
+
 
 .general-1, .general-5, .general-2, .general-3 {
     width: 50%;
@@ -133,17 +153,13 @@ header .textos-header {
     min-height: 500px;
 }
 
-.general-3 {
-    background-image: url(../img/img2.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 500px;
-}
+
 
 h2 {
     font-size: 55px;
     line-height: 70px;
     color: black;
+    text-align: center;
 }
 
 .body1 {
@@ -161,7 +177,7 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
-    color: #333;
+    color: #000000;
 }
 
 .container {
@@ -197,7 +213,7 @@ h1 {
 }
 
 .services li {
-    background: #ddd;
+    background: #b8b3b3;
     padding: 8px;
     margin: 5px 0;
     border-radius: 4px;
@@ -206,7 +222,7 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
-    color: #333;
+    color: #000000;
 }
 
 
@@ -494,93 +510,4 @@ img {
 .whatsapp-button:hover {
     background-color: #128C7E;
 }
-/* Mejoras de responsividad */
-/* Mejoras de responsividad */
-@media (max-width: 768px) {
-    /* Ajustar navegación */
-    nav {
-        text-align: center;
-        padding: 10px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    nav a {
-        display: block;
-        padding: 10px;
-    }
 
-    /* Ajustar contenedores */
-    .container {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 10px;
-    }
-    .category {
-        width: 100%;
-        max-width: 400px;
-        margin-bottom: 20px;
-    }
-
-    /* Ajustar encabezado */
-    header {
-        height: auto;
-        padding: 20px 0;
-        text-align: center;
-    }
-    .textos-header {
-        height: auto;
-        padding: 20px;
-    }
-    .textos-header h1 {
-        font-size: 28px;
-    }
-    .textos-header h2 {
-        font-size: 18px;
-    }
-
-    /* Ajuste del formulario de contacto */
-    .contact-section {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-    }
-    .image-container {
-        width: 100%;
-        border-radius: 0;
-    }
-    .formulario {
-        width: 100%;
-        padding: 20px;
-    }
-
-    /* Ajuste de la sección de clientes */
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-    .cards .card {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-
-    /* Evitar desbordes */
-    html, body {
-        overflow-x: hidden;
-    }
-}
-
-/* Separar "Quiénes Somos" y ajustar color */
-.quienes-somos {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    color: #2C5364;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.quienes-somos span {
-    display: block;
-}
