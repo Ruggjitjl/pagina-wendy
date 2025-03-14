@@ -500,6 +500,9 @@ img {
     nav {
         text-align: center;
         padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     nav a {
         display: block;
@@ -510,9 +513,12 @@ img {
     .container {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        padding: 10px;
     }
     .category {
-        width: 90%;
+        width: 100%;
+        max-width: 400px;
         margin-bottom: 20px;
     }
 
@@ -520,22 +526,24 @@ img {
     header {
         height: auto;
         padding: 20px 0;
+        text-align: center;
     }
     .textos-header {
         height: auto;
         padding: 20px;
     }
     .textos-header h1 {
-        font-size: 36px;
+        font-size: 28px;
     }
     .textos-header h2 {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     /* Ajuste del formulario de contacto */
     .contact-section {
         flex-direction: column;
         height: auto;
+        padding: 20px;
     }
     .image-container {
         width: 100%;
@@ -554,5 +562,10 @@ img {
     .cards .card {
         width: 90%;
         margin-bottom: 20px;
+    }
+
+    /* Evitar desbordes */
+    html, body {
+        overflow-x: hidden;
     }
 }
