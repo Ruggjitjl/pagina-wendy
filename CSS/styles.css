@@ -495,6 +495,7 @@ img {
     background-color: #128C7E;
 }
 /* Mejoras de responsividad */
+/* Mejoras de responsividad */
 @media (max-width: 768px) {
     /* Ajustar navegación */
     nav {
@@ -568,4 +569,18 @@ img {
     html, body {
         overflow-x: hidden;
     }
+}
+
+/* Separar "Quiénes Somos" y ajustar color */
+.quienes-somos {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #2C5364;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.quienes-somos span {
+    display: block;
 }
