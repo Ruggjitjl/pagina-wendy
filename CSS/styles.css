@@ -494,15 +494,65 @@ img {
 .whatsapp-button:hover {
     background-color: #128C7E;
 }
+/* Mejoras de responsividad */
 @media (max-width: 768px) {
+    /* Ajustar navegación */
+    nav {
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Ajustar contenedores */
     .container {
         flex-direction: column;
         align-items: center;
     }
     .category {
         width: 90%;
+        margin-bottom: 20px;
     }
-    .body1 {
-        min-height: 100vh;
+
+    /* Ajustar encabezado */
+    header {
+        height: auto;
+        padding: 20px 0;
+    }
+    .textos-header {
+        height: auto;
+        padding: 20px;
+    }
+    .textos-header h1 {
+        font-size: 36px;
+    }
+    .textos-header h2 {
+        font-size: 24px;
+    }
+
+    /* Ajuste del formulario de contacto */
+    .contact-section {
+        flex-direction: column;
+        height: auto;
+    }
+    .image-container {
+        width: 100%;
+        border-radius: 0;
+    }
+    .formulario {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Ajuste de la sección de clientes */
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards .card {
+        width: 90%;
+        margin-bottom: 20px;
     }
 }
